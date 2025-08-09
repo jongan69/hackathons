@@ -132,7 +132,7 @@ export const hackathonBoards: HackathonBoard[] = [
   {
     id: 'lablab-ai',
     name: 'LabLab.ai',
-    website: 'https://lablab.ai',
+    website: 'https://lablab.ai/event',
     description: 'Community platform for AI-focused hackathons. Hosts large AI/ML hackathons worldwide.',
     region: 'Global',
     virtualInPerson: 'Both',
