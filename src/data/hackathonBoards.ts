@@ -178,5 +178,65 @@ export const hackathonBoards: HackathonBoard[] = [
     virtualInPerson: 'Virtual',
     openSubmissions: false,
     tags: ['Innovation', 'Crowdsourced', 'Corporate']
+  },
+  {
+    id: 'eventbrite',
+    name: 'Eventbrite',
+    website: 'https://eventbrite.com/d/online/hackathon/',
+    description: 'Global events platform hosting many hackathons. Search their Science & Tech section for hackathon events worldwide.',
+    region: 'Global',
+    virtualInPerson: 'Both',
+    openSubmissions: true,
+    tags: ['Events', 'Ticketing', 'Local']
+  },
+  {
+    id: 'hackster-io',
+    name: 'Hackster.io',
+    website: 'https://hackster.io/contests',
+    description: 'Community platform for hardware and IoT projects that frequently runs hackathons and contests. Focus on hardware hackers.',
+    region: 'Global',
+    virtualInPerson: 'Both',
+    openSubmissions: true,
+    tags: ['Hardware', 'IoT', 'Engineering']
+  },
+  {
+    id: 'hackathons-near-me',
+    name: 'HackathonsNear.Me',
+    website: 'https://hackathonsnear.me',
+    description: 'Location-based hackathon search engine for in-person events. Search by city or address to find local hackathons on a map.',
+    region: 'USA',
+    virtualInPerson: 'In-Person',
+    openSubmissions: true,
+    tags: ['Location-based', 'Local', 'Map Search']
+  },
+  {
+    id: 'hackatrack',
+    name: 'HackaTrack',
+    website: 'https://hackatrack.net',
+    description: 'Curated directory of in-person hackathons in Europe. Lists the coolest on-site hackathon events across EU countries.',
+    region: 'Europe',
+    virtualInPerson: 'In-Person',
+    openSubmissions: false,
+    tags: ['Europe', 'In-Person', 'Curated']
+  },
+  {
+    id: 'openhackathons',
+    name: 'OpenHackathons.org',
+    website: 'https://openhackathons.org',
+    description: 'Global hackathon directory and resource site. Worldwide directory for coding competitions and challenges by region and theme.',
+    region: 'Global',
+    virtualInPerson: 'Both',
+    openSubmissions: true,
+    tags: ['Directory', 'Global', 'Resource']
+  },
+  {
+    id: 'bemyapp',
+    name: 'BeMyApp',
+    website: 'https://bemyapp.com',
+    description: 'Full-service hackathon platform and organizer. Complete solution supporting corporate and community hackathons of any size.',
+    region: 'Global',
+    virtualInPerson: 'Both',
+    openSubmissions: true,
+    tags: ['Corporate', 'Full-service', 'Professional']
   }
 ];
