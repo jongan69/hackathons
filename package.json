@@ -1,13 +1,51 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "hackathons",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Every open hackathon in one deadline-sorted feed. Aggregates upcoming hackathons from Devpost, Hack Club and Major League Hacking into a free, searchable directory with a public JSON API.",
+  "keywords": [
+    "hackathon",
+    "hackathons",
+    "hackathon-finder",
+    "hackathon-aggregator",
+    "hackathon-list",
+    "hackathon-directory",
+    "hackathon-calendar",
+    "upcoming-hackathons",
+    "online-hackathons",
+    "student-hackathons",
+    "hackathon-api",
+    "devpost",
+    "mlh",
+    "major-league-hacking",
+    "hack-club",
+    "web-scraping",
+    "open-data",
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss"
+  ],
+  "homepage": "https://github.com/jongan69/hackathons#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongan69/hackathons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jongan69/hackathons/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ingest": "node scripts/ingest.mjs",
+    "seed": "node scripts/seed.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test:parse": "node scripts/test-parse.mjs",
+    "check": "npm run test:parse && npm run lint && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

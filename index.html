@@ -2,12 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beautiful Hackathon Posting Boards Website</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#08090C" />
+
+    <title>Find Hackathons — Every Open Hackathon, Sorted by Deadline</title>
+    <meta
+      name="description"
+      content="A single deadline-sorted feed of open hackathons from Devpost, Hack Club and MLH. Filter by prize, format, theme and eligibility. Free, no account required."
+    />
+    <link rel="canonical" href="https://hackathons.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Every open hackathon, in one deadline-sorted feed" />
+    <meta
+      property="og:description"
+      content="Devpost, Hack Club and MLH aggregated and ranked by what closes first. Filter by prize, format and eligibility. No account required."
+    />
+    <meta property="og:url" content="https://hackathons.dev/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Search engines get a real description of the site even before JS runs. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Find Hackathons",
+        "url": "https://hackathons.dev/",
+        "description": "A deadline-sorted feed of open hackathons aggregated from Devpost, Hack Club and Major League Hacking.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://hackathons.dev/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="padding: 2rem; font-family: system-ui; color: #e2e8f0; background: #08090C">
+        <h1>Find Hackathons</h1>
+        <p>
+          This site aggregates open hackathons from Devpost, Hack Club and Major League Hacking
+          into one deadline-sorted feed. JavaScript is required to browse and filter it.
+        </p>
+        <p>The raw data is always available as JSON at <a href="/events.json">/events.json</a>.</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

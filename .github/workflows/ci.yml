@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'public/events.json' # data commits from the ingest bot don't need a rebuild check
+      - '**.md'
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      # Parser tests run first and need no install -- fastest signal on the
+      # thing most likely to break (upstream format changes).
+      - name: Parser tests
+        run: npm run test:parse
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Validate committed data
+        run: npm run validate

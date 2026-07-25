@@ -1,0 +1,50 @@
+name: Report bad data
+description: A dead link, wrong deadline, missing event, or incorrect prize
+title: "[data] "
+labels: ["data-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Data quality is the whole product — this is a real bug, not a nitpick. Thanks for reporting it.
+
+  - type: input
+    id: event-id
+    attributes:
+      label: Event ID
+      description: From `events.json` if you have it, e.g. `devpost-29541`
+      placeholder: devpost-29541
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: Event or listing URL
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's wrong?
+      options:
+        - Link is dead or wrong
+        - Deadline is incorrect
+        - Event has already ended but still shows
+        - Prize amount or currency is wrong
+        - Location or format is wrong
+        - Eligibility/audience is wrong
+        - Event is missing entirely
+        - Duplicate listing
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: What should it say instead?
+      description: If you know the correct value, tell us — it makes the fix much faster.
+    validations:
+      required: false

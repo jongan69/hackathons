@@ -11,7 +11,7 @@ export const hackathonBoards: HackathonBoard[] = [
     openSubmissions: true,
     featured: true,
     tags: ['Popular', 'Established', 'Community'],
-    userBase: '1M+ developers'
+    ingested: true
   },
   {
     id: 'devfolio',
@@ -23,7 +23,6 @@ export const hackathonBoards: HackathonBoard[] = [
     openSubmissions: true,
     featured: true,
     tags: ['Modern', 'Developer-friendly', 'Innovation'],
-    userBase: '500K+ developers'
   },
   {
     id: 'superteam',
@@ -35,7 +34,6 @@ export const hackathonBoards: HackathonBoard[] = [
     openSubmissions: true,
     featured: true,
     tags: ['Web3', 'Crypto', 'Blockchain'],
-    userBase: '100K+ crypto devs'
   },
   {
     id: 'x-search',
@@ -47,7 +45,6 @@ export const hackathonBoards: HackathonBoard[] = [
     openSubmissions: true,
     featured: true,
     tags: ['Real-time', 'Social Media', 'Live Updates'],
-    userBase: 'Twitter users'
   },
   {
     id: 'hackathon-com',
@@ -63,24 +60,27 @@ export const hackathonBoards: HackathonBoard[] = [
     id: 'hackalist',
     name: 'Hackalist',
     website: 'https://hackalist.org',
-    description: 'Community-driven database of upcoming hackathons worldwide. Maintained via GitHub contributions.',
+    // Verified 2026-07-25: the site itself states it is no longer maintained.
+    // Kept for the historical archive, but must never be presented as live.
+    description: 'Archive only — no longer updated. Historical record of hackathons from 2014-2025, useful for research but not for finding current events.',
     region: 'Global',
     virtualInPerson: 'Both',
-    openSubmissions: true,
-    tags: ['Community', 'Open Source', 'GitHub']
+    openSubmissions: false,
+    tags: ['Archive', 'Inactive', 'Historical']
   },
   {
     id: 'mlh',
     name: 'Major League Hacking',
-    website: 'https://mlh.io',
+    website: 'https://mlh.com/seasons',
     description: 'Official student hackathon league listing 200+ seasonal hackathons globally. Focus on college events.',
     region: 'Global',
     virtualInPerson: 'Both',
     openSubmissions: false,
-    tags: ['Student', 'College', 'Official']
+    tags: ['Student', 'College', 'Official'],
+    ingested: true
   },
   {
-    id: 'hack-club',
+    id: 'hackclub',
     name: 'Hack Club Hackathons',
     website: 'https://hackathons.hackclub.com',
     description: 'Curated list of high school hackathons (779 events across 30 US states + 22 countries).',

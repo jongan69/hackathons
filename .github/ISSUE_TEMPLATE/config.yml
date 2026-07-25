@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Adding a source
+    url: https://github.com/jongan69/hackathons/blob/main/CONTRIBUTING.md
+    about: Want to build the adapter yourself? It's one file — here's the walkthrough.
+  - name: Data schema reference
+    url: https://github.com/jongan69/hackathons/blob/main/docs/DATA.md
+    about: Field-by-field docs for the public events.json API.
+  - name: Roadmap and strategy
+    url: https://github.com/jongan69/hackathons/blob/main/STRATEGY.md
+    about: Where this is going and why.

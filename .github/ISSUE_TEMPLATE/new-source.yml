@@ -1,0 +1,51 @@
+name: Suggest a source
+description: A hackathon platform we should be ingesting
+title: "[source] "
+labels: ["new-source"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every source we add makes the feed more complete. If you want to build the
+        adapter yourself, [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) walks through it —
+        it's one file.
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform name
+      placeholder: Devfolio
+    validations:
+      required: true
+
+  - type: input
+    id: listing-url
+    attributes:
+      label: Listing page URL
+      placeholder: https://devfolio.co/hackathons
+    validations:
+      required: true
+
+  - type: input
+    id: api
+    attributes:
+      label: API or feed endpoint, if you know one
+      description: JSON endpoint, RSS feed, or sitemap. Leave blank if it needs scraping.
+    validations:
+      required: false
+
+  - type: textarea
+    id: coverage
+    attributes:
+      label: What does it cover that we're missing?
+      description: Region, audience, theme, event type — the gap it fills.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: willing
+    attributes:
+      label: Optional
+      options:
+        - label: I'd be willing to write the adapter
+          required: false

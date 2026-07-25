@@ -1,0 +1,57 @@
+name: Ingest hackathons
+
+# Refreshes public/events.json from the upstream sources and commits it.
+# Netlify's GitHub integration then rebuilds automatically on that commit.
+#
+# Cost: $0. GitHub Actions is free for public repos, and this runs well inside
+# the free minutes for private ones (~4 runs/day at well under a minute each).
+
+on:
+  schedule:
+    # 06:00, 12:00, 18:00 and 00:00 UTC -- deadlines matter, staleness is the
+    # main failure mode of every other hackathon directory.
+    - cron: '0 0,6,12,18 * * *'
+  workflow_dispatch: # allow manual runs from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Parsers are gated first: never publish data produced by broken logic.
+      - name: Test parsers
+        run: node scripts/test-parse.mjs
+
+      - name: Fetch and normalize
+        run: node scripts/ingest.mjs
+
+      - name: Validate output
+        run: node scripts/validate.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- public/events.json; then
+            echo "No change in event data."
+            exit 0
+          fi
+
+          COUNT=$(node -p "require('./public/events.json').count")
+          git config user.name  "hackathon-ingest[bot]"
+          git config user.email "actions@github.com"
+          git add public/events.json
+          git commit -m "data: refresh feed (${COUNT} events)"
+          git push

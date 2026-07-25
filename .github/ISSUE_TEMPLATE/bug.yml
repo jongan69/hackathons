@@ -1,0 +1,40 @@
+name: Bug report
+description: Something in the site or the ingest pipeline is broken
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where?
+      options:
+        - Site / UI
+        - Ingest pipeline
+        - Filters or search
+        - Build or tooling
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the exact steps if it's reproducible, and any console output.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: false
+
+  - type: input
+    id: env
+    attributes:
+      label: Browser / Node version
+      placeholder: Chrome 130 on macOS, or Node 20.11
+    validations:
+      required: false
