@@ -56,6 +56,15 @@ export interface HackathonEvent {
   beginnerFriendly: boolean;
   /** Other sources this same event was found on. */
   alsoOn: string[];
+  /** Sponsored listing — set when an organizer pays for promotion. */
+  sponsor?: {
+    tier: 'featured' | 'premium';
+    since: string;       // ISO 8601 date when sponsorship started
+    until: string;       // ISO 8601 date when it expires
+    logo?: string;       // optional organizer logo URL
+    description?: string; // premium tier: expanded description
+    cta?: string;         // premium tier: custom CTA text
+  };
 }
 
 export interface SourceStatus {

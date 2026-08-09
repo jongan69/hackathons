@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, RefreshCw } from 'lucide-react';
+import { ArrowDown, RefreshCw, Star } from 'lucide-react';
 import type { EventsPayload } from '../types/hackathon';
 import { daysUntil, relativeTime } from '../lib/events';
 
@@ -69,6 +69,13 @@ const Hero: React.FC<Props> = ({ data }) => {
             >
               <RefreshCw className="h-4 w-4" aria-hidden="true" />
               See our sources
+            </a>
+            <a
+              href="#sponsor"
+              className="inline-flex items-center gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-5 py-3 text-sm font-semibold text-amber-300 transition-colors hover:border-amber-400/50 hover:bg-amber-500/20"
+            >
+              <Star className="h-4 w-4" aria-hidden="true" />
+              Sponsor your hackathon
             </a>
           </div>
         </div>

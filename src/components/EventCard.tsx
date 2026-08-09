@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, MapPin, Globe, Trophy, Users, Sparkles, Lock } from 'lucide-react';
+import { ArrowUpRight, MapPin, Globe, Trophy, Users, Sparkles, Lock, Star } from 'lucide-react';
 import type { HackathonEvent } from '../types/hackathon';
 import {
   deadlineText, prizeText, participantsText, urgencyOf,
@@ -19,9 +19,8 @@ interface Props {
 }
 
 /**
- * One hackathon, optimized for scanning. The three decisions a builder makes
- * -- how long do I have, what's it worth, can I actually enter -- are all
- * readable without hovering or clicking through.
+ * One hackathon, optimized for scanning. Sponsored events get gold treatment
+ * and sort to the top of the feed.
  */
 const EventCard: React.FC<Props> = ({ event }) => {
   const urgency = urgencyOf(event);
@@ -29,11 +28,23 @@ const EventCard: React.FC<Props> = ({ event }) => {
   const prize = prizeText(event);
   const people = participantsText(event.participants);
   const isOnline = event.format === 'online';
+  const isSponsored = !!event.sponsor;
 
   return (
     <article
-      className={`group card-surface flex flex-col transition-colors duration-200 ${style.ring}`}
+      className={`group card-surface flex flex-col transition-colors duration-200 ${style.ring} ${
+        isSponsored ? 'ring-2 ring-amber-500/30 shadow-lg shadow-amber-500/5' : ''
+      }`}
     >
+      {isSponsored && (
+        <div className="flex items-center gap-1.5 border-b border-amber-500/20 bg-amber-500/10 px-5 py-2">
+          <Star className="h-3.5 w-3.5 text-amber-400" aria-hidden="true" />
+          <span className="text-xs font-semibold text-amber-300">
+            {event.sponsor!.tier === 'premium' ? 'Featured Hackathon' : 'Sponsored'}
+          </span>
+        </div>
+      )}
+
       <a
         href={event.url}
         target="_blank"
@@ -66,6 +77,13 @@ const EventCard: React.FC<Props> = ({ event }) => {
 
         {event.organizer && (
           <p className="mb-3 truncate text-xs text-slate-500">by {event.organizer}</p>
+        )}
+
+        {/* Premium tier: show expanded description */}
+        {isSponsored && event.sponsor!.description && (
+          <p className="mb-3 text-xs leading-relaxed text-slate-400 line-clamp-2">
+            {event.sponsor!.description}
+          </p>
         )}
 
         <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-slate-400">
@@ -117,7 +135,9 @@ const EventCard: React.FC<Props> = ({ event }) => {
         </div>
       </a>
 
-      <div className="flex items-center justify-between border-t border-ink-700 px-5 py-2.5">
+      <div className={`flex items-center justify-between border-t px-5 py-2.5 ${
+        isSponsored ? 'border-amber-500/20' : 'border-ink-700'
+      }`}>
         <span className="text-[11px] text-slate-500">
           via {event.sourceName}
           {event.alsoOn.length > 0 && ` + ${event.alsoOn.join(', ')}`}
@@ -126,9 +146,13 @@ const EventCard: React.FC<Props> = ({ event }) => {
           href={event.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-400 transition-colors hover:text-signal"
+          className={`inline-flex items-center gap-1 text-[11px] font-semibold transition-colors ${
+            isSponsored
+              ? 'text-amber-400 hover:text-amber-300'
+              : 'text-slate-400 hover:text-signal'
+          }`}
         >
-          Open
+          {isSponsored && event.sponsor!.cta ? event.sponsor!.cta : 'Open'}
           <ArrowUpRight className="h-3 w-3" aria-hidden="true" />
         </a>
       </div>

@@ -122,20 +122,24 @@ export function applyFilters(events: HackathonEvent[], f: Filters): HackathonEve
 
 export function sortEvents(events: HackathonEvent[], key: SortKey): HackathonEvent[] {
   const copy = [...events];
+  // Sponsored events always sort above non-sponsored, regardless of sort key
+  const sponsorWeight = (e: HackathonEvent) => (e.sponsor ? 0 : 1);
   const statusWeight: Record<string, number> = { open: 0, upcoming: 1 };
 
   switch (key) {
     case 'prize':
-      return copy.sort((a, b) => (b.prizeUsd ?? -1) - (a.prizeUsd ?? -1));
+      return copy.sort((a, b) => sponsorWeight(a) - sponsorWeight(b) || (b.prizeUsd ?? -1) - (a.prizeUsd ?? -1));
     case 'popularity':
-      return copy.sort((a, b) => (b.participants ?? -1) - (a.participants ?? -1));
+      return copy.sort((a, b) => sponsorWeight(a) - sponsorWeight(b) || (b.participants ?? -1) - (a.participants ?? -1));
     case 'newest':
-      return copy.sort((a, b) => time(b.startsAt) - time(a.startsAt));
+      return copy.sort((a, b) => sponsorWeight(a) - sponsorWeight(b) || time(b.startsAt) - time(a.startsAt));
     case 'deadline':
     default:
       return copy.sort((a, b) => {
-        const sw = (statusWeight[a.status] ?? 2) - (statusWeight[b.status] ?? 2);
+        const sw = sponsorWeight(a) - sponsorWeight(b);
         if (sw !== 0) return sw;
+        const st = (statusWeight[a.status] ?? 2) - (statusWeight[b.status] ?? 2);
+        if (st !== 0) return st;
         return time(a.endsAt, Infinity) - time(b.endsAt, Infinity);
       });
   }
