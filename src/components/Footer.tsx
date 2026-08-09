@@ -41,6 +41,11 @@ const Footer: React.FC<Props> = ({ generatedAt }) => {
             <Github className="h-4 w-4" aria-hidden="true" />
             Source &amp; data on GitHub
           </a>
+          <nav aria-label="Legal and support" className="flex flex-wrap gap-x-4 gap-y-1 md:justify-end">
+            <a href="/privacy.html" className="hover:text-signal">Privacy</a>
+            <a href="/terms.html" className="hover:text-signal">Terms</a>
+            <a href="/support.html" className="hover:text-signal">Support</a>
+          </nav>
           <span className="font-mono text-xs">Last ingest: {stamp} UTC</span>
         </div>
       </div>
