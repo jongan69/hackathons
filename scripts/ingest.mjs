@@ -89,7 +89,9 @@ async function main() {
 
     if (result.status === 'fulfilled') {
       all.push(...result.value.events);
-      sourceStats.push({ ...meta, count: result.value.events.length, ok: true });
+      const count = result.value.events.length;
+      if (count === 0) log(`  ${meta.name} DEGRADED: adapter returned no events`);
+      sourceStats.push({ ...meta, count, ok: count > 0 });
     } else {
       // One bad source must never take down the build. Ship what we have.
       log(`  ${meta.name} FAILED: ${result.reason?.message ?? result.reason}`);

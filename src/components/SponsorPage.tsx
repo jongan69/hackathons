@@ -1,15 +1,30 @@
 import React from 'react';
-import { Check, ExternalLink, Mail } from 'lucide-react';
+import { Check, ExternalLink, Github } from 'lucide-react';
 
 /**
  * Self-serve sponsor page. Uses Stripe Payment Links (configured in Stripe
  * dashboard) so there's no server-side payment code to maintain.
  *
- * Replace the URLs below with live Stripe Payment Links after creating them
- * at https://dashboard.stripe.com/payment-links
+ * Checkout only appears when a real build-time Stripe Payment Link is present.
+ * The default path is a public GitHub issue so an unconfigured deploy never
+ * sends an organizer to a placeholder or dead contact address.
  */
-const STRIPE_FEATURED = 'https://buy.stripe.com/REPLACE_FEATURED';
-const STRIPE_PREMIUM = 'https://buy.stripe.com/REPLACE_PREMIUM';
+const SPONSOR_INTEREST_URL =
+  'https://github.com/jongan69/hackathons/issues/new?title=%5Bsponsorship%5D%20Hackathon%20listing%20interest&body=Hackathon%20name%3A%0AOrganizer%20URL%3A%0ARequested%20tier%3A%0ATarget%20dates%3A%0A';
+
+function paymentLink(value: string | undefined) {
+  if (!value) return null;
+
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && url.hostname === 'buy.stripe.com' ? url.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
+const STRIPE_FEATURED = paymentLink(import.meta.env.VITE_STRIPE_FEATURED_URL);
+const STRIPE_PREMIUM = paymentLink(import.meta.env.VITE_STRIPE_PREMIUM_URL);
 
 const TIERS = [
   {
@@ -23,7 +38,7 @@ const TIERS = [
       '"Sponsored" badge on your listing',
       'Sorts above all non-sponsored events',
       'Pinned for full 30-day duration',
-      'Performance: avg 3–5× more clicks',
+      'Placement above non-sponsored listings',
     ],
     cta: 'Get Featured — $99',
     highlight: false,
@@ -39,8 +54,7 @@ const TIERS = [
       '"Featured Hackathon" badge (more prominent)',
       'Expanded description text on your card',
       'Custom call-to-action button text',
-      'Included in weekly newsletter (1 issue)',
-      'Performance: avg 5–10× more clicks',
+      'Organizer-supplied logo and expanded description',
     ],
     cta: 'Go Premium — $199',
     highlight: true,
@@ -56,24 +70,9 @@ const SponsorPage: React.FC = () => {
           Sponsor Your Hackathon
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-slate-400">
-          Reach thousands of hackers actively looking for their next event.
-          Featured listings get 3–10× more clicks than standard listings.
+          Put your event at the top of the same deadline-sorted feed builders already use.
+          Submit the organizer URL and dates first; placement starts after the listing is verified.
         </p>
-      </div>
-
-      {/* Stats */}
-      <div className="mb-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
-        {[
-          { label: 'Monthly Visitors', value: '5,000+' },
-          { label: 'Hackathons Listed', value: '180+' },
-          { label: 'Avg. Click Rate', value: '12%' },
-          { label: 'Countries Reached', value: '40+' },
-        ].map((stat) => (
-          <div key={stat.label} className="card-surface p-5 text-center">
-            <div className="mb-1 text-2xl font-bold text-signal">{stat.value}</div>
-            <div className="text-xs text-slate-500">{stat.label}</div>
-          </div>
-        ))}
       </div>
 
       {/* Pricing */}
@@ -109,7 +108,7 @@ const SponsorPage: React.FC = () => {
             </ul>
 
             <a
-              href={tier.stripeLink}
+              href={tier.stripeLink ?? SPONSOR_INTEREST_URL}
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex w-full items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all ${
@@ -118,7 +117,7 @@ const SponsorPage: React.FC = () => {
                   : 'bg-signal text-black hover:bg-signal/90'
               }`}
             >
-              {tier.cta}
+              {tier.stripeLink ? tier.cta : 'Request this placement'}
               <ExternalLink className="h-4 w-4" />
             </a>
           </div>
@@ -132,18 +131,18 @@ const SponsorPage: React.FC = () => {
           {[
             {
               step: '1',
-              title: 'Purchase a listing',
-              desc: 'Click one of the payment links above. Stripe handles payment securely.',
+              title: 'Submit your event',
+              desc: 'Send the organizer URL, dates and requested placement through the public interest form.',
             },
             {
               step: '2',
-              title: 'We activate your listing',
-              desc: 'Your hackathon gets the gold treatment within 24 hours. Usually same day.',
+              title: 'We verify the details',
+              desc: 'The event must be open, legitimate and link directly to its organizer.',
             },
             {
               step: '3',
-              title: 'Watch the clicks roll in',
-              desc: 'Your event sorts above all standard listings. Hackers see it first.',
+              title: 'Placement goes live',
+              desc: 'The sponsored card is clearly labelled and remains above standard listings for the agreed period.',
             },
           ].map((s) => (
             <div key={s.step} className="text-center">
@@ -160,10 +159,10 @@ const SponsorPage: React.FC = () => {
       {/* Contact */}
       <div className="mt-8 text-center">
         <p className="text-sm text-slate-500">
-          Questions?{' '}
-          <a href="mailto:sponsor@hackathons.dev" className="inline-flex items-center gap-1 text-signal hover:underline">
-            <Mail className="h-3.5 w-3.5" />
-            sponsor@hackathons.dev
+          Questions or sponsorship interest?{' '}
+          <a href={SPONSOR_INTEREST_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-signal hover:underline">
+            <Github className="h-3.5 w-3.5" />
+            Open the sponsorship form
           </a>
         </p>
       </div>

@@ -13,6 +13,9 @@ interface Props {
  */
 const Hero: React.FC<Props> = ({ data }) => {
   const { events } = data;
+  const failedSources = data.sources.filter((source) => !source.ok);
+  const generatedAt = new Date(data.generatedAt).getTime();
+  const isStale = !Number.isFinite(generatedAt) || Date.now() - generatedAt > 8 * 60 * 60 * 1000;
 
   const closingThisWeek = events.filter((e) => {
     const d = daysUntil(e.endsAt);
@@ -43,6 +46,14 @@ const Hero: React.FC<Props> = ({ data }) => {
             <span className="h-1.5 w-1.5 animate-pulse-dot rounded-full bg-signal" aria-hidden="true" />
             Updated {relativeTime(data.generatedAt)} · {data.sources.filter((s) => s.ok).length} sources
           </span>
+          {isStale || failedSources.length > 0 ? (
+            <div className="mt-4 rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm leading-6 text-amber-200" role="status">
+              {isStale ? 'Feed refresh is overdue. Dates and availability may have changed. ' : ''}
+              {failedSources.length > 0
+                ? `Coverage is reduced because ${failedSources.map((source) => source.name).join(', ')} returned no events during the latest ingest.`
+                : ''}
+            </div>
+          ) : null}
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-6xl">
             Every hackathon.

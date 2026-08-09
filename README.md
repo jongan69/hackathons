@@ -95,7 +95,7 @@ integrations, newsletters, whatever. No key, no rate limit, no attribution
 required (though a link back is appreciated).
 
 ```bash
-curl https://hackathons.dev/events.json
+curl https://hackathonsboard.netlify.app/events.json
 ```
 
 ```json
@@ -134,7 +134,7 @@ Full field reference: **[docs/DATA.md](./docs/DATA.md)**
 ### Example: hackathons closing this week with a real prize
 
 ```js
-const { events } = await fetch('https://hackathons.dev/events.json').then(r => r.json());
+const { events } = await fetch('https://hackathonsboard.netlify.app/events.json').then(r => r.json());
 const week = Date.now() + 7 * 864e5;
 
 events

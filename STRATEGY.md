@@ -162,7 +162,7 @@ Ordered by leverage per unit of effort. Everything in Phase 1 and 2 stays on the
 |---|---|---|
 | 1 | Push and let the Action run once | Turns 32 seeded events into the full ~300 live corpus |
 | 2 | Verify the MLH adapter against live HTML | It's the one unverified parser; check the count is non-zero |
-| 3 | Buy a domain that says what it does | `hackathons.dev`, `hackfeed.dev` — the meta tags already assume this |
+| 3 | Evaluate a memorable custom domain | Keep `hackathonsboard.netlify.app` canonical until a domain is owned and verified |
 | 4 | Add Plausible or the existing PostHog | You cannot improve ranking without knowing which cards get clicked |
 
 ### Phase 2 — Make it findable (weeks 2–4)

@@ -38,10 +38,8 @@ Every open hackathon in one deadline-sorted feed. Aggregates Devpost, Hack Club 
 Website field:
 
 ```
-https://hackathons.netlify.app
+https://hackathonsboard.netlify.app
 ```
-
-(Update once the real deploy URL is known.)
 
 Check **Releases**, **Packages** and **Deployments** off; leave **Use your GitHub
 Pages website** off since Netlify handles hosting.
@@ -111,15 +109,8 @@ narrower.
 
 ---
 
-## 7. After the first successful deploy
+## 7. Verify the canonical deployment
 
-Replace the placeholder `hackathons.dev` references with the real URL:
+The canonical beta is `https://hackathonsboard.netlify.app/`. After deploy, confirm the homepage, Open Graph URL, JSON-LD, robots file, sitemap, README examples, and data reference all use that origin. Confirm `/events.json` is fresh, CORS-open, and reports a degraded source when an adapter returns no events.
 
-- `README.md` — the curl example and the data section
-- `docs/DATA.md` — the curl example
-- `index.html` — `og:url` and `<link rel="canonical">`
-- `public/robots.txt` — the sitemap line
-
-```bash
-grep -rn "hackathons.dev" README.md docs/ index.html public/robots.txt
-```
+Stripe Payment Links are optional build-time values (`VITE_STRIPE_FEATURED_URL` and `VITE_STRIPE_PREMIUM_URL`). If they are absent or invalid, the sponsor page must show the GitHub sponsorship-interest form and no checkout button.

@@ -23,7 +23,7 @@ const Footer: React.FC<Props> = ({ generatedAt }) => {
         <div>
           <div className="flex items-center gap-2">
             <Terminal className="h-5 w-5 text-signal" aria-hidden="true" />
-            <span className="font-bold text-white">hackathons.dev</span>
+            <span className="font-bold text-white">Hackathons Board</span>
           </div>
           <p className="mt-2 max-w-md text-sm text-slate-500">
             An open index of hackathons, rebuilt automatically several times a day.
@@ -33,7 +33,7 @@ const Footer: React.FC<Props> = ({ generatedAt }) => {
 
         <div className="flex flex-col gap-2 text-sm text-slate-500 md:items-end">
           <a
-            href="https://github.com"
+            href="https://github.com/jongan69/hackathons"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 hover:text-signal"
