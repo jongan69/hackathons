@@ -52,6 +52,11 @@ check('zero prize has no label',
 check('zero prize amount is 0',
   parsePrize('$<span data-currency-value>0</span>').amount, 0);
 check('missing prize', parsePrize(null).usd, null);
+check('quoted greater-than stays inside markup',
+  parsePrize('<span title="x > 20">$5,000</span>').usd, 5000);
+check('plain less-than text is preserved', parsePrize('Under < 5 USD').amount, 5);
+check('malformed markup has a defined fallback',
+  parsePrize('$5,000 <span title="open').usd, 5000);
 
 // --- Image handling --------------------------------------------------------
 check('protocol-relative image gets scheme',

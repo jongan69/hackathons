@@ -3,7 +3,7 @@
 // returns [] rather than breaking the whole ingest run. If MLH ships a redesign,
 // only this file needs attention.
 
-import { inferAudience } from '../lib/parse.mjs';
+import { inferAudience, stripMarkup } from '../lib/parse.mjs';
 
 export const meta = {
   id: 'mlh',
@@ -103,7 +103,7 @@ function isMlhInternalUrl(value) {
     const isMlhDotCom = hostname === 'mlh.com' || hostname.endsWith('.mlh.com');
     const isMlhBrandLink =
       (hostname === 'mlh.io' || hostname.endsWith('.mlh.io')) &&
-      url.pathname.startsWith('/brand');
+      (url.pathname === '/brand' || url.pathname.startsWith('/brand/'));
     return (
       isMlhDotCom ||
       isMlhBrandLink
@@ -111,21 +111,6 @@ function isMlhInternalUrl(value) {
   } catch {
     return true;
   }
-}
-
-function stripMarkup(value) {
-  let text = '';
-  let inTag = false;
-  for (const character of value) {
-    if (character === '<') {
-      inTag = true;
-    } else if (character === '>' && inTag) {
-      inTag = false;
-    } else if (!inTag) {
-      text += character;
-    }
-  }
-  return text;
 }
 
 // "JUN 13 - 14" or "APR 24 - 26" or "JUN 12 - 18"

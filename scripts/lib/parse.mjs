@@ -90,19 +90,42 @@ export function parsePrize(raw) {
   };
 }
 
-function stripMarkup(value) {
+export function stripMarkup(value) {
+  const source = String(value);
   let text = '';
-  let inTag = false;
-  for (const character of value) {
-    if (character === '<') {
-      inTag = true;
-    } else if (character === '>' && inTag) {
-      inTag = false;
-    } else if (!inTag) {
-      text += character;
+  let cursor = 0;
+
+  while (cursor < source.length) {
+    if (source[cursor] !== '<' || !isTagStart(source[cursor + 1])) {
+      text += source[cursor];
+      cursor += 1;
+      continue;
     }
+
+    const tagStart = cursor;
+    cursor += 1;
+    let quote = '';
+    let closed = false;
+    while (cursor < source.length) {
+      const character = source[cursor];
+      if (quote) {
+        if (character === quote) quote = '';
+      } else if (character === '"' || character === "'") {
+        quote = character;
+      } else if (character === '>') {
+        closed = true;
+        cursor += 1;
+        break;
+      }
+      cursor += 1;
+    }
+    if (!closed) return text + source.slice(tagStart);
   }
   return text;
+}
+
+function isTagStart(value) {
+  return Boolean(value && /[A-Za-z/!?]/.test(value));
 }
 
 function symbolFor(code) {
