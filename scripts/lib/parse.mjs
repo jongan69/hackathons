@@ -67,7 +67,7 @@ const SYMBOL_TO_CODE = { '$': 'USD', '€': 'EUR', '£': 'GBP', '₹': 'INR', '�
 export function parsePrize(raw) {
   if (!raw || typeof raw !== 'string') return { amount: null, currency: null, usd: null, label: null };
 
-  const text = raw.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+  const text = stripMarkup(raw).replace(/\s+/g, ' ').trim();
   const digits = text.replace(/[^\d.]/g, '');
   const amount = digits ? Number(digits.replace(/\.(?=.*\.)/g, '')) : null;
   if (amount === null || Number.isNaN(amount)) {
@@ -88,6 +88,44 @@ export function parsePrize(raw) {
     usd,
     label: amount > 0 ? `${symbolFor(currency)}${amount.toLocaleString('en-US')}` : null,
   };
+}
+
+export function stripMarkup(value) {
+  const source = String(value);
+  let text = '';
+  let cursor = 0;
+
+  while (cursor < source.length) {
+    if (source[cursor] !== '<' || !isTagStart(source[cursor + 1])) {
+      text += source[cursor];
+      cursor += 1;
+      continue;
+    }
+
+    const tagStart = cursor;
+    cursor += 1;
+    let quote = '';
+    let closed = false;
+    while (cursor < source.length) {
+      const character = source[cursor];
+      if (quote) {
+        if (character === quote) quote = '';
+      } else if (character === '"' || character === "'") {
+        quote = character;
+      } else if (character === '>') {
+        closed = true;
+        cursor += 1;
+        break;
+      }
+      cursor += 1;
+    }
+    if (!closed) return text + source.slice(tagStart);
+  }
+  return text;
+}
+
+function isTagStart(value) {
+  return Boolean(value && /[A-Za-z/!?]/.test(value));
 }
 
 function symbolFor(code) {

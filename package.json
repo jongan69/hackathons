@@ -1,6 +1,7 @@
 {
   "name": "hackathons",
   "private": true,
+  "packageManager": "bun@1.3.14",
   "version": "1.0.0",
   "type": "module",
   "description": "Every open hackathon in one deadline-sorted feed. Aggregates upcoming hackathons from Devpost, Hack Club and Major League Hacking into a free, searchable directory with a public JSON API.",
@@ -45,7 +46,7 @@
     "seed": "node scripts/seed.mjs",
     "validate": "node scripts/validate.mjs",
     "test:parse": "node scripts/test-parse.mjs",
-    "check": "npm run test:parse && npm run lint && npm run build"
+    "check": "bun run test:parse && bun run lint && bun run build"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

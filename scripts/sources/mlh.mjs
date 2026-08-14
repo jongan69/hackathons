@@ -3,7 +3,7 @@
 // returns [] rather than breaking the whole ingest run. If MLH ships a redesign,
 // only this file needs attention.
 
-import { inferAudience } from '../lib/parse.mjs';
+import { inferAudience, stripMarkup } from '../lib/parse.mjs';
 
 export const meta = {
   id: 'mlh',
@@ -44,7 +44,7 @@ function parseSeason(html, season) {
 
   for (const block of anchors) {
     const href = block.match(/href="([^"]+)"/)?.[1];
-    if (!href || href.includes('mlh.com/') || href.includes('mlh.io/brand')) continue;
+    if (!href || isMlhInternalUrl(href)) continue;
 
     const name = pick(block, 'event-name') ?? pick(block, 'name');
     const dateText = pick(block, 'event-date') ?? pick(block, 'date');
@@ -93,7 +93,24 @@ function parseSeason(html, season) {
 function pick(block, className) {
   const re = new RegExp(`class="[^"]*${className}[^"]*"[^>]*>([\\s\\S]*?)<`, 'i');
   const raw = block.match(re)?.[1];
-  return raw ? decode(raw.replace(/<[^>]*>/g, '').trim()) || null : null;
+  return raw ? decode(stripMarkup(raw).trim()) || null : null;
+}
+
+function isMlhInternalUrl(value) {
+  try {
+    const url = new URL(value);
+    const hostname = url.hostname.toLowerCase().replace(/\.$/, '');
+    const isMlhDotCom = hostname === 'mlh.com' || hostname.endsWith('.mlh.com');
+    const isMlhBrandLink =
+      (hostname === 'mlh.io' || hostname.endsWith('.mlh.io')) &&
+      (url.pathname === '/brand' || url.pathname.startsWith('/brand/'));
+    return (
+      isMlhDotCom ||
+      isMlhBrandLink
+    );
+  } catch {
+    return true;
+  }
 }
 
 // "JUN 13 - 14" or "APR 24 - 26" or "JUN 12 - 18"
@@ -126,9 +143,15 @@ function dedupeByUrl(events) {
 }
 
 function decode(s) {
-  return s
-    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ');
+  const entities = {
+    amp: '&',
+    lt: '<',
+    gt: '>',
+    quot: '"',
+    '#39': "'",
+    nbsp: ' ',
+  };
+  return s.replace(/&(amp|lt|gt|quot|#39|nbsp);/g, (entity, name) => entities[name] ?? entity);
 }
 
 function slug(s) {
