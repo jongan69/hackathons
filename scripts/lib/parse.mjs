@@ -67,7 +67,7 @@ const SYMBOL_TO_CODE = { '$': 'USD', '€': 'EUR', '£': 'GBP', '₹': 'INR', '�
 export function parsePrize(raw) {
   if (!raw || typeof raw !== 'string') return { amount: null, currency: null, usd: null, label: null };
 
-  const text = raw.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+  const text = stripMarkup(raw).replace(/\s+/g, ' ').trim();
   const digits = text.replace(/[^\d.]/g, '');
   const amount = digits ? Number(digits.replace(/\.(?=.*\.)/g, '')) : null;
   if (amount === null || Number.isNaN(amount)) {
@@ -88,6 +88,21 @@ export function parsePrize(raw) {
     usd,
     label: amount > 0 ? `${symbolFor(currency)}${amount.toLocaleString('en-US')}` : null,
   };
+}
+
+function stripMarkup(value) {
+  let text = '';
+  let inTag = false;
+  for (const character of value) {
+    if (character === '<') {
+      inTag = true;
+    } else if (character === '>' && inTag) {
+      inTag = false;
+    } else if (!inTag) {
+      text += character;
+    }
+  }
+  return text;
 }
 
 function symbolFor(code) {
