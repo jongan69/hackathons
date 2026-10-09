@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T22:39:39.795Z",
+  "generatedAt": "2026-10-09T03:43:25.386Z",
   "count": 188,
   "sources": [
     {
@@ -35,7 +35,7 @@
       "organizer": "dsmhack",
       "startsAt": "2026-07-18T23:59:00.000Z",
       "endsAt": "2026-10-08T23:59:00.000Z",
-      "deadlineLabel": "about 5 hours left",
+      "deadlineLabel": "3 minutes left",
       "dateLabel": "Jul 18 - Oct 08, 2026",
       "format": "in-person",
       "locationLabel": "Corteva's Pioneer Shull Building",
@@ -53,7 +53,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 104,
+      "participants": 106,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -188,7 +188,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 2919,
+      "participants": 2936,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -222,7 +222,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 68,
+      "participants": 69,
       "status": "open",
       "inviteOnly": true,
       "beginnerFriendly": false,
@@ -238,7 +238,7 @@
       "organizer": "Hackyard Technologies Pvt limited",
       "startsAt": "2026-09-25T23:59:00.000Z",
       "endsAt": "2026-10-10T23:59:00.000Z",
-      "deadlineLabel": "2 days left",
+      "deadlineLabel": "1 day left",
       "dateLabel": "Sep 25 - Oct 10, 2026",
       "format": "in-person",
       "locationLabel": "IIT Guwahati",
@@ -257,7 +257,7 @@
         "Low/No Code"
       ],
       "audience": "open",
-      "participants": 209,
+      "participants": 210,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -292,7 +292,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 758,
+      "participants": 761,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -396,7 +396,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 205,
+      "participants": 206,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -466,7 +466,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 795,
+      "participants": 797,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -499,7 +499,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 3016,
+      "participants": 3022,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -534,7 +534,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 1945,
+      "participants": 1949,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -550,7 +550,7 @@
       "organizer": "vikrant university, gwalior",
       "startsAt": "2026-09-22T23:59:00.000Z",
       "endsAt": "2026-10-15T23:59:00.000Z",
-      "deadlineLabel": "7 days left",
+      "deadlineLabel": "6 days left",
       "dateLabel": "Sep 22 - Oct 15, 2026",
       "format": "in-person",
       "locationLabel": "Vikrant University , Gwalior",
@@ -569,7 +569,7 @@
         "Robotic Process Automation"
       ],
       "audience": "university",
-      "participants": 161,
+      "participants": 162,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -585,7 +585,7 @@
       "organizer": "elite coders",
       "startsAt": "2026-09-25T23:59:00.000Z",
       "endsAt": "2026-10-15T23:59:00.000Z",
-      "deadlineLabel": "7 days left",
+      "deadlineLabel": "6 days left",
       "dateLabel": "Sep 25 - Oct 15, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -604,7 +604,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 199,
+      "participants": 200,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -639,7 +639,7 @@
         "Open Ended"
       ],
       "audience": "university",
-      "participants": 718,
+      "participants": 720,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -743,7 +743,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 966,
+      "participants": 967,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -811,7 +811,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 266,
+      "participants": 268,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -879,7 +879,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 359,
+      "participants": 360,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -941,14 +941,14 @@
       "prizeUsd": 138000,
       "prizeLabel": "$138,000",
       "prizeCurrency": "USD",
-      "cashPrizeCount": 12,
+      "cashPrizeCount": 1,
       "themes": [
         "Machine Learning/AI",
         "Open Ended",
         "Productivity"
       ],
       "audience": "open",
-      "participants": 51946,
+      "participants": 52003,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -999,7 +999,7 @@
       "organizer": "IEEE Turkey",
       "startsAt": "2026-10-05T23:59:00.000Z",
       "endsAt": "2026-10-25T23:59:00.000Z",
-      "deadlineLabel": "17 days left",
+      "deadlineLabel": "16 days left",
       "dateLabel": "Oct 05 - 25, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -1018,7 +1018,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 632,
+      "participants": 633,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1053,7 +1053,7 @@
         "Education"
       ],
       "audience": "open",
-      "participants": 2779,
+      "participants": 2789,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1069,7 +1069,7 @@
       "organizer": "GitLab",
       "startsAt": "2026-10-05T23:59:00.000Z",
       "endsAt": "2026-10-27T23:59:00.000Z",
-      "deadlineLabel": "19 days left",
+      "deadlineLabel": "18 days left",
       "dateLabel": "Oct 05 - 27, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -1088,7 +1088,7 @@
         "Productivity"
       ],
       "audience": "open",
-      "participants": 1299,
+      "participants": 1315,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1123,7 +1123,7 @@
         "Serverless"
       ],
       "audience": "open",
-      "participants": 4386,
+      "participants": 4389,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1193,7 +1193,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 806,
+      "participants": 810,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1228,7 +1228,7 @@
         "Robotic Process Automation"
       ],
       "audience": "open",
-      "participants": 19998,
+      "participants": 20028,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1261,7 +1261,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 812,
+      "participants": 821,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1312,7 +1312,7 @@
       "organizer": "Galuxium",
       "startsAt": "2026-07-15T23:59:00.000Z",
       "endsAt": "2026-10-31T23:59:00.000Z",
-      "deadlineLabel": "23 days left",
+      "deadlineLabel": "22 days left",
       "dateLabel": "Jul 15 - Oct 31, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -1331,7 +1331,7 @@
         "Productivity"
       ],
       "audience": "open",
-      "participants": 945,
+      "participants": 946,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1366,7 +1366,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 78,
+      "participants": 79,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1429,14 +1429,14 @@
       "prizeUsd": 6000,
       "prizeLabel": "$6,000",
       "prizeCurrency": "USD",
-      "cashPrizeCount": 1,
+      "cashPrizeCount": 5,
       "themes": [
         "AR/VR",
         "E-commerce/Retail",
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 734,
+      "participants": 737,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1471,7 +1471,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 9815,
+      "participants": 9873,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1541,7 +1541,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 419,
+      "participants": 421,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1576,7 +1576,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 2628,
+      "participants": 2640,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1660,7 +1660,7 @@
       "organizer": "university of pennsylvania",
       "startsAt": "2026-09-22T23:59:00.000Z",
       "endsAt": "2026-12-07T23:59:00.000Z",
-      "deadlineLabel": "2 months left",
+      "deadlineLabel": "about 2 months left",
       "dateLabel": "Sep 22 - Dec 07, 2026",
       "format": "in-person",
       "locationLabel": "Amy Gutman Hall",
@@ -1747,7 +1747,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 165,
+      "participants": 167,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1782,7 +1782,7 @@
         "Robotic Process Automation"
       ],
       "audience": "university",
-      "participants": 309,
+      "participants": 310,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1817,7 +1817,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 533,
+      "participants": 535,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1918,7 +1918,7 @@
         "Health"
       ],
       "audience": "open",
-      "participants": 43,
+      "participants": 48,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1987,7 +1987,7 @@
         "Machine Learning/AI"
       ],
       "audience": "university",
-      "participants": 3,
+      "participants": 2,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -2055,7 +2055,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 16,
+      "participants": 17,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -2159,7 +2159,7 @@
         "Open Ended"
       ],
       "audience": "high-school",
-      "participants": 42,
+      "participants": 44,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2196,7 +2196,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 32,
+      "participants": 34,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2229,7 +2229,7 @@
         "Beginner Friendly"
       ],
       "audience": "open",
-      "participants": 32,
+      "participants": 37,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2437,7 +2437,7 @@
         "Web"
       ],
       "audience": "high-school",
-      "participants": 294,
+      "participants": 295,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2507,7 +2507,7 @@
         "Health"
       ],
       "audience": "open",
-      "participants": 182,
+      "participants": 187,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": true,
@@ -2542,7 +2542,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 20,
+      "participants": 21,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2577,7 +2577,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 75,
+      "participants": 78,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2612,7 +2612,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 348,
+      "participants": 351,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2926,7 +2926,7 @@
         "Beginner Friendly"
       ],
       "audience": "university",
-      "participants": 56,
+      "participants": 57,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": true,
@@ -3272,7 +3272,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 51,
+      "participants": 53,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": false,
@@ -3342,7 +3342,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 86,
+      "participants": 88,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -3446,7 +3446,7 @@
         "Social Good"
       ],
       "audience": "university",
-      "participants": 171,
+      "participants": 174,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -3588,7 +3588,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 127,
+      "participants": 128,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -3691,7 +3691,7 @@
         "Beginner Friendly"
       ],
       "audience": "open",
-      "participants": 23,
+      "participants": 24,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -4005,7 +4005,7 @@
         "Health"
       ],
       "audience": "open",
-      "participants": 47,
+      "participants": 48,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -4248,7 +4248,7 @@
         "Social Good"
       ],
       "audience": "university",
-      "participants": 11,
+      "participants": 12,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": false,
@@ -4778,23 +4778,23 @@
       "id": "devpost-31529",
       "source": "devpost",
       "sourceName": "Devpost",
-      "title": "Haven Asbury Park Game Jam - High School",
+      "title": "Haven Princeton Game Jam - High School",
       "url": "https://haven-asbury-park.devpost.com/",
-      "imageUrl": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/412/283/datas/medium_square.jpg",
+      "imageUrl": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/538/799/datas/medium_square.png",
       "organizer": "Hack Club",
       "startsAt": "2026-11-14T23:59:00.000Z",
       "endsAt": "2026-11-14T23:59:00.000Z",
       "deadlineLabel": "Upcoming",
       "dateLabel": "Nov 14, 2026",
       "format": "in-person",
-      "locationLabel": "iCode Shrewbury, NJ",
+      "locationLabel": "1435 Capital",
       "city": null,
       "country": null,
       "countryCode": null,
       "lat": null,
       "lng": null,
-      "prizeUsd": 1780,
-      "prizeLabel": "$1,780",
+      "prizeUsd": 3551,
+      "prizeLabel": "$3,551",
       "prizeCurrency": "USD",
       "cashPrizeCount": 4,
       "themes": [
@@ -5002,7 +5002,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 74,
+      "participants": 75,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -5551,7 +5551,7 @@
         "Education"
       ],
       "audience": "open",
-      "participants": 188,
+      "participants": 190,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -5581,14 +5581,14 @@
       "prizeUsd": 3800,
       "prizeLabel": "$3,800",
       "prizeCurrency": "USD",
-      "cashPrizeCount": 1,
+      "cashPrizeCount": 5,
       "themes": [
         "Beginner Friendly",
         "Machine Learning/AI",
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 233,
+      "participants": 234,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -5688,7 +5688,7 @@
         "Education"
       ],
       "audience": "open",
-      "participants": 206,
+      "participants": 207,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -5723,7 +5723,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 22,
+      "participants": 23,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
