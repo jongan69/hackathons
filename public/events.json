@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-10T22:39:51.878Z",
-  "count": 184,
+  "generatedAt": "2026-11-11T03:49:37.869Z",
+  "count": 187,
   "sources": [
     {
       "id": "devpost",
       "name": "Devpost",
       "url": "https://devpost.com/hackathons",
-      "count": 172,
+      "count": 175,
       "ok": true
     },
     {
@@ -35,7 +35,7 @@
       "organizer": "Echelon institute of technology",
       "startsAt": "2026-10-17T23:59:00.000Z",
       "endsAt": "2026-11-10T23:59:00.000Z",
-      "deadlineLabel": "about 7 hours left",
+      "deadlineLabel": "about 1 hour left",
       "dateLabel": "Oct 17 - Nov 10, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -54,7 +54,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 293,
+      "participants": 296,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -70,7 +70,7 @@
       "organizer": "VIT Bhopal University",
       "startsAt": "2026-11-04T23:59:00.000Z",
       "endsAt": "2026-11-11T23:59:00.000Z",
-      "deadlineLabel": "about 21 hours left",
+      "deadlineLabel": "about 18 hours left",
       "dateLabel": "Nov 04 - 11, 2026",
       "format": "in-person",
       "locationLabel": "VIT Bhopal University",
@@ -89,7 +89,7 @@
         "Machine Learning/AI"
       ],
       "audience": "university",
-      "participants": 61,
+      "participants": 63,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -105,7 +105,7 @@
       "organizer": "Devin",
       "startsAt": "2026-11-01T23:59:00.000Z",
       "endsAt": "2026-11-11T23:59:00.000Z",
-      "deadlineLabel": "about 19 hours left",
+      "deadlineLabel": "about 15 hours left",
       "dateLabel": "Nov 01 - 11, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -124,7 +124,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 264,
+      "participants": 267,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -140,7 +140,7 @@
       "organizer": "Institute of Engineering & Management",
       "startsAt": "2026-11-10T23:59:00.000Z",
       "endsAt": "2026-11-11T23:59:00.000Z",
-      "deadlineLabel": "about 18 hours left",
+      "deadlineLabel": "about 13 hours left",
       "dateLabel": "Nov 10 - 11, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -164,6 +164,39 @@
       "alsoOn": []
     },
     {
+      "id": "devpost-32023",
+      "source": "devpost",
+      "sourceName": "Devpost",
+      "title": "IBM Db2Hack 2026",
+      "url": "https://ibm-db2hack-2026.devpost.com/",
+      "imageUrl": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/792/503/datas/medium_square.png",
+      "organizer": "IBM",
+      "startsAt": "2026-11-05T23:59:00.000Z",
+      "endsAt": "2026-11-11T23:59:00.000Z",
+      "deadlineLabel": "about 5 hours left",
+      "dateLabel": "Nov 05 - 11, 2026",
+      "format": "online",
+      "locationLabel": "Online",
+      "city": null,
+      "country": null,
+      "countryCode": null,
+      "lat": null,
+      "lng": null,
+      "prizeUsd": 0,
+      "prizeLabel": null,
+      "prizeCurrency": "INR",
+      "cashPrizeCount": 0,
+      "themes": [
+        "Databases"
+      ],
+      "audience": "open",
+      "participants": 78,
+      "status": "open",
+      "inviteOnly": false,
+      "beginnerFriendly": false,
+      "alsoOn": []
+    },
+    {
       "id": "devpost-31302",
       "source": "devpost",
       "sourceName": "Devpost",
@@ -173,7 +206,7 @@
       "organizer": "PayPal",
       "startsAt": "2026-10-01T23:59:00.000Z",
       "endsAt": "2026-11-12T23:59:00.000Z",
-      "deadlineLabel": "2 days left",
+      "deadlineLabel": "1 day left",
       "dateLabel": "Oct 01 - Nov 12, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -192,7 +225,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 33581,
+      "participants": 33779,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -227,7 +260,7 @@
         "Productivity"
       ],
       "audience": "open",
-      "participants": 64,
+      "participants": 66,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -243,7 +276,7 @@
       "organizer": "University of Waterloo",
       "startsAt": "2026-11-06T23:59:00.000Z",
       "endsAt": "2026-11-13T23:59:00.000Z",
-      "deadlineLabel": "3 days left",
+      "deadlineLabel": "2 days left",
       "dateLabel": "Nov 06 - 13, 2026",
       "format": "in-person",
       "locationLabel": "Velocity, Innovation Arena",
@@ -261,7 +294,7 @@
         "Fintech"
       ],
       "audience": "university",
-      "participants": 24,
+      "participants": 25,
       "status": "open",
       "inviteOnly": true,
       "beginnerFriendly": false,
@@ -324,14 +357,14 @@
       "prizeUsd": 17150,
       "prizeLabel": "$17,150",
       "prizeCurrency": "USD",
-      "cashPrizeCount": 8,
+      "cashPrizeCount": 1,
       "themes": [
         "Beginner Friendly",
         "Low/No Code",
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 477,
+      "participants": 492,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -399,9 +432,44 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 1138,
+      "participants": 1142,
       "status": "open",
       "inviteOnly": false,
+      "beginnerFriendly": true,
+      "alsoOn": []
+    },
+    {
+      "id": "devpost-31859",
+      "source": "devpost",
+      "sourceName": "Devpost",
+      "title": "Emory Hacks 2026",
+      "url": "https://emory-hacks-2026.devpost.com/",
+      "imageUrl": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/825/156/datas/medium_square.png",
+      "organizer": "PROJECT Emory",
+      "startsAt": "2026-11-10T23:59:00.000Z",
+      "endsAt": "2026-11-15T23:59:00.000Z",
+      "deadlineLabel": "4 days left",
+      "dateLabel": "Nov 10 - 15, 2026",
+      "format": "in-person",
+      "locationLabel": "Emory Univ. - Goizueta Business School",
+      "city": null,
+      "country": null,
+      "countryCode": null,
+      "lat": null,
+      "lng": null,
+      "prizeUsd": 0,
+      "prizeLabel": null,
+      "prizeCurrency": "USD",
+      "cashPrizeCount": 0,
+      "themes": [
+        "Beginner Friendly",
+        "Education",
+        "Social Good"
+      ],
+      "audience": "open",
+      "participants": 1,
+      "status": "open",
+      "inviteOnly": true,
       "beginnerFriendly": true,
       "alsoOn": []
     },
@@ -415,7 +483,7 @@
       "organizer": "Software Engineering Club (DEV)",
       "startsAt": "2026-10-16T23:59:00.000Z",
       "endsAt": "2026-11-15T23:59:00.000Z",
-      "deadlineLabel": "5 days left",
+      "deadlineLabel": "4 days left",
       "dateLabel": "Oct 16 - Nov 15, 2026",
       "format": "online",
       "locationLabel": "Online",
@@ -434,7 +502,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 203,
+      "participants": 204,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -469,7 +537,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 289,
+      "participants": 295,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -504,7 +572,7 @@
         "Productivity"
       ],
       "audience": "open",
-      "participants": 2058,
+      "participants": 2072,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -573,7 +641,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 185,
+      "participants": 187,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -643,7 +711,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 5731,
+      "participants": 5748,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -745,7 +813,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 224,
+      "participants": 225,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -815,7 +883,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 429,
+      "participants": 431,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1023,7 +1091,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 463,
+      "participants": 465,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1058,7 +1126,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 145,
+      "participants": 146,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1121,14 +1189,14 @@
       "prizeUsd": 0,
       "prizeLabel": null,
       "prizeCurrency": "USD",
-      "cashPrizeCount": 0,
+      "cashPrizeCount": 1,
       "themes": [
         "Beginner Friendly",
         "Design",
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 33,
+      "participants": 34,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1163,7 +1231,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 64,
+      "participants": 67,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1226,14 +1294,14 @@
       "prizeUsd": 100000,
       "prizeLabel": "$100,000",
       "prizeCurrency": "USD",
-      "cashPrizeCount": 15,
+      "cashPrizeCount": 1,
       "themes": [
         "Beginner Friendly",
         "Machine Learning/AI",
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 11517,
+      "participants": 11663,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1267,7 +1335,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 516,
+      "participants": 517,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1302,7 +1370,7 @@
         "Machine Learning/AI"
       ],
       "audience": "university",
-      "participants": 55,
+      "participants": 56,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1337,7 +1405,7 @@
         "Low/No Code"
       ],
       "audience": "open",
-      "participants": 143,
+      "participants": 163,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1372,7 +1440,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 131,
+      "participants": 134,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1407,7 +1475,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 13,
+      "participants": 18,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1477,7 +1545,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 84,
+      "participants": 86,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1546,10 +1614,45 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 268,
+      "participants": 271,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
+      "alsoOn": []
+    },
+    {
+      "id": "devpost-32072",
+      "source": "devpost",
+      "sourceName": "Devpost",
+      "title": "InnovateHER Hackathon: Girls Who Code",
+      "url": "https://hackathon-girls-who-code.devpost.com/",
+      "imageUrl": null,
+      "organizer": "Girls Who Code",
+      "startsAt": "2026-11-10T23:59:00.000Z",
+      "endsAt": "2026-12-13T23:59:00.000Z",
+      "deadlineLabel": "about 1 month left",
+      "dateLabel": "Nov 10 - Dec 13, 2026",
+      "format": "online",
+      "locationLabel": "Online",
+      "city": null,
+      "country": null,
+      "countryCode": null,
+      "lat": null,
+      "lng": null,
+      "prizeUsd": 0,
+      "prizeLabel": null,
+      "prizeCurrency": "USD",
+      "cashPrizeCount": 0,
+      "themes": [
+        "Beginner Friendly",
+        "Open Ended",
+        "Social Good"
+      ],
+      "audience": "open",
+      "participants": 0,
+      "status": "open",
+      "inviteOnly": false,
+      "beginnerFriendly": true,
       "alsoOn": []
     },
     {
@@ -1581,7 +1684,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 1147,
+      "participants": 1162,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1616,7 +1719,7 @@
         "Low/No Code"
       ],
       "audience": "open",
-      "participants": 41,
+      "participants": 44,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1651,7 +1754,7 @@
         "Productivity"
       ],
       "audience": "open",
-      "participants": 286,
+      "participants": 288,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1679,14 +1782,14 @@
       "prizeUsd": 7800,
       "prizeLabel": "$7,800",
       "prizeCurrency": "USD",
-      "cashPrizeCount": 1,
+      "cashPrizeCount": 5,
       "themes": [
         "Beginner Friendly",
         "Machine Learning/AI",
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 1013,
+      "participants": 1016,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1721,7 +1824,7 @@
         "Productivity"
       ],
       "audience": "open",
-      "participants": 2704,
+      "participants": 2719,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1824,7 +1927,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 251,
+      "participants": 256,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1859,7 +1962,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 327,
+      "participants": 328,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -1894,7 +1997,7 @@
         "Robotic Process Automation"
       ],
       "audience": "university",
-      "participants": 425,
+      "participants": 426,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -1922,14 +2025,14 @@
       "prizeUsd": 0,
       "prizeLabel": null,
       "prizeCurrency": "USD",
-      "cashPrizeCount": 0,
+      "cashPrizeCount": 1,
       "themes": [
         "Education",
         "Machine Learning/AI",
         "Web"
       ],
       "audience": "open",
-      "participants": 845,
+      "participants": 847,
       "status": "open",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -2100,7 +2203,7 @@
         "Open Ended"
       ],
       "audience": "university",
-      "participants": 4,
+      "participants": 5,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": false,
@@ -2135,7 +2238,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 44,
+      "participants": 49,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -2205,7 +2308,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 66,
+      "participants": 69,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -2377,7 +2480,7 @@
         "Quantum"
       ],
       "audience": "open",
-      "participants": 57,
+      "participants": 58,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -2446,7 +2549,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 12,
+      "participants": 14,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -2550,7 +2653,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 73,
+      "participants": 77,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": true,
@@ -2616,7 +2719,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 2,
+      "participants": 3,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": true,
@@ -2650,7 +2753,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 0,
+      "participants": 2,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": true,
@@ -2720,7 +2823,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 18,
+      "participants": 19,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -2932,6 +3035,41 @@
       "alsoOn": []
     },
     {
+      "id": "devpost-31990",
+      "source": "devpost",
+      "sourceName": "Devpost",
+      "title": "HackPrinceton Fall '26",
+      "url": "https://hackprinceton-fall-26.devpost.com/",
+      "imageUrl": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/005/789/397/datas/medium_square.png",
+      "organizer": "Princeton University",
+      "startsAt": "2026-11-13T23:59:00.000Z",
+      "endsAt": "2026-11-15T23:59:00.000Z",
+      "deadlineLabel": "Upcoming",
+      "dateLabel": "Nov 13 - 15, 2026",
+      "format": "in-person",
+      "locationLabel": "JRR, LAS, Robertson, Friend",
+      "city": null,
+      "country": null,
+      "countryCode": null,
+      "lat": null,
+      "lng": null,
+      "prizeUsd": 0,
+      "prizeLabel": null,
+      "prizeCurrency": "USD",
+      "cashPrizeCount": 1,
+      "themes": [
+        "Education",
+        "Machine Learning/AI",
+        "Social Good"
+      ],
+      "audience": "university",
+      "participants": 0,
+      "status": "upcoming",
+      "inviteOnly": false,
+      "beginnerFriendly": false,
+      "alsoOn": []
+    },
+    {
       "id": "devpost-31823",
       "source": "devpost",
       "sourceName": "Devpost",
@@ -2960,7 +3098,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 39,
+      "participants": 40,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -3274,7 +3412,7 @@
         "Machine Learning/AI"
       ],
       "audience": "university",
-      "participants": 136,
+      "participants": 151,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": false,
@@ -3449,7 +3587,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 34,
+      "participants": 35,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -3655,7 +3793,7 @@
         "Education"
       ],
       "audience": "open",
-      "participants": 59,
+      "participants": 60,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -3689,7 +3827,7 @@
         "Open Ended"
       ],
       "audience": "open",
-      "participants": 46,
+      "participants": 45,
       "status": "upcoming",
       "inviteOnly": true,
       "beginnerFriendly": true,
@@ -3966,7 +4104,7 @@
         "Open Ended"
       ],
       "audience": "university",
-      "participants": 16,
+      "participants": 17,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -4070,7 +4208,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 1354,
+      "participants": 1366,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -4170,7 +4308,7 @@
         "Productivity"
       ],
       "audience": "open",
-      "participants": 1,
+      "participants": 3,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -4205,7 +4343,7 @@
         "Enterprise"
       ],
       "audience": "open",
-      "participants": 31,
+      "participants": 32,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -4238,7 +4376,7 @@
         "Gaming"
       ],
       "audience": "open",
-      "participants": 74,
+      "participants": 79,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -4381,41 +4519,6 @@
       "alsoOn": [
         "Hack Club"
       ]
-    },
-    {
-      "id": "devpost-32072",
-      "source": "devpost",
-      "sourceName": "Devpost",
-      "title": "InnovateHER Hackathon: Girls Who Code",
-      "url": "https://hackathon-girls-who-code.devpost.com/",
-      "imageUrl": null,
-      "organizer": "Girls Who Code",
-      "startsAt": "2026-11-13T23:59:00.000Z",
-      "endsAt": "2026-12-13T23:59:00.000Z",
-      "deadlineLabel": "Upcoming",
-      "dateLabel": "Nov 13 - Dec 13, 2026",
-      "format": "online",
-      "locationLabel": "Online",
-      "city": null,
-      "country": null,
-      "countryCode": null,
-      "lat": null,
-      "lng": null,
-      "prizeUsd": 0,
-      "prizeLabel": null,
-      "prizeCurrency": "USD",
-      "cashPrizeCount": 0,
-      "themes": [
-        "Beginner Friendly",
-        "Open Ended",
-        "Social Good"
-      ],
-      "audience": "open",
-      "participants": 0,
-      "status": "upcoming",
-      "inviteOnly": false,
-      "beginnerFriendly": true,
-      "alsoOn": []
     },
     {
       "id": "devpost-32057",
@@ -4649,7 +4752,7 @@
         "Education"
       ],
       "audience": "open",
-      "participants": 392,
+      "participants": 394,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -4684,7 +4787,7 @@
         "Social Good"
       ],
       "audience": "open",
-      "participants": 85,
+      "participants": 87,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -4721,7 +4824,7 @@
         "Robotic Process Automation"
       ],
       "audience": "open",
-      "participants": 41,
+      "participants": 42,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -4756,7 +4859,7 @@
         "Education"
       ],
       "audience": "open",
-      "participants": 873,
+      "participants": 876,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": true,
@@ -5131,7 +5234,7 @@
         "Machine Learning/AI"
       ],
       "audience": "open",
-      "participants": 324,
+      "participants": 326,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -5506,7 +5609,7 @@
         "Robotic Process Automation"
       ],
       "audience": "open",
-      "participants": 1,
+      "participants": 2,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
@@ -6091,7 +6194,7 @@
         "Web"
       ],
       "audience": "open",
-      "participants": 40,
+      "participants": 41,
       "status": "upcoming",
       "inviteOnly": false,
       "beginnerFriendly": false,
